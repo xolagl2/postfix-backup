@@ -1,0 +1,14 @@
+---
+- hosts: mail-servers
+  gather_facts: true 
+  vars:
+    backupdir: "/home/ansible/projects/postfix-backup/backups"
+  tasks:
+  - name: Fetch stuff from the remote and save to local
+    synchronize:
+      src: '{{item.src}}' 
+      dest: '{{item.dest}}/' 
+      mode: pull
+    with_items:
+      - { src: '/etc/postfix', dest: '{{backupdir}}/{{ansible_hostname}}' }
+

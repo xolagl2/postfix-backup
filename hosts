@@ -1,0 +1,12 @@
+[mail-servers:vars]
+ansible_port=9292
+ansible_user=ansible
+
+[mail-servers]
+correo          ansible_host=172.22.48.16
+correo01        ansible_host=172.22.48.35
+svca-correo01   ansible_host=172.24.56.8
+svmt-correo01   ansible_host=172.24.88.8
+svch-correo01   ansible_host=172.24.112.8
+cmch-correo01   ansible_host=172.24.104.8
+
