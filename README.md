@@ -13,7 +13,7 @@ Los ficheros de configuración de cada servidor se salvan dentro de la carpeta "
 - Se debe modificar el fichero host segun las direcciones de los servidores remotos a controlar.
 - Se debe modificar la variable {{backupdir}} con la ruta a la carpeta destino "backups".
 
-## Metodo de ejecución:
+## Metodo de ejecución básico:
 
 - Entrar al directorio del proyecto y ejecutar:
 >  $ ansible-playbook postfix-backup.yml
